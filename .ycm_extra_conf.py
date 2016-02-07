@@ -11,8 +11,9 @@ flags = [
 '-Wall', # Verbose Warning
 '-g', 	 # create the files needed for gdb tp work
 '-std=c99', # set the language standard
-'-I', '.'  # Add the local includes
-'-I', '~/Code/gmock-1.7.0/gtest'
+'-I', '.',  # Add the local includes
+'-I', '~/Code/gmock-1.7.0/gtest',
+'-I', './includes'
 ]
 
 
