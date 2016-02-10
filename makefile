@@ -43,6 +43,8 @@ GTEST_INCLUDES = -I$(GTEST_DIR)/include/
 $(TARGET): $(OBJECTS)
 	@echo " \n *** LINKING SOURCE OBJECTS *** \n"
 	@echo " $(CC) $^ -o $(TARGET) "; $(CC) $^ -o $(TARGET)
+	@echo "\n *** UPDATING TAG FILE *** \n"
+	@echo ctags -R src/*.c includes/*.h
 
 # compile the source code
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
