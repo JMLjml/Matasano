@@ -29,7 +29,7 @@ OBJS = $(filter-out $(BUILDDIR)/runner.o, $(OBJECTS))
 
 
 # Variables to point to the GTEST Directory for unit testing.
-GTEST_DIR = $(HOME)/Code/gmock-1.7.0/gtest
+GTEST_DIR = /opt/googletest/googletest
 GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h $(GTEST_DIR)/include/gtest/internal/*.h
 GTEST_SRCS_ = $(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEADERS)
 
